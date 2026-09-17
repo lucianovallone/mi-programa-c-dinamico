@@ -29,6 +29,13 @@ int main() {
 	
 	// Liberar la memoria asignada
 	// Es muy importante liberar la memoria dinámica cuando ya no se necesita para evitar fugas de memoria.
+	// Inicializar y mostrar los elementos del arreglo
+	printf("Inicializando y mostrando los elementos del arreglo:\n");
+	for (int i = 0; i < n; i++) {
+		arr[i] = i * 100; // Asignamos un valor simple para el ejemplo
+		printf("Elemento en indice %d: %d\n", i, arr[i]);
+	}
+	
 	free(arr);
 	printf("Memoria liberada.\n");
 	
